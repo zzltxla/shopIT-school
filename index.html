@@ -3,33 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.lottielab.com/s/lottie-player@1.x/player-web.min.js"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>ShopIT</title>
     <meta name="description" content="Buy your favorite things">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <figure class="sun">
-                <script src="https://cdn.lottielab.com/s/lottie-player@1.x/player-web.min.js"></script>
-                <lottie-player src="https://cdn.lottielab.com/l/CEoPDpBMz1WgTT.json" loop autoplay></lottie-player>
-            </figure>
-            <h2>ShopIT</h2>
+    <header class="justify-center">
+        <div class="header-wrapper container align-center--y space-between">
+            <div class="logo align-center--y">
+                <figure class="sun">
+                    <lottie-player src="https://cdn.lottielab.com/l/CEoPDpBMz1WgTT.json" loop autoplay></lottie-player>                
+                </figure>
+                <h2>ShopIT</h2>
+            </div>
+            <div class="search-bar align-center--y space-between">
+                <input type="text" placeholder="Search.." class="search-text">
+                <input type="button" value="" class="search-btn">
+            </div>
+            <nav>
+                <ul class="align-center--y">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="search-bar">
-            <input type="text">
-            <input type="button" value="submit">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        
+    <main class="container">
+        <section class="hero align-bottom--y">
+            <h1>The best of the best for <span>you</span></h1>
+        </section>
+        <section>
+            <h2>Our products</h2>
+            <div class="article-wrapper row align-center--y space-between">
+                <article>
+                    <img src="./assets/img/products/Intel Photos Nicolas Foster.jpg" alt="">
+                    <h4></h4>
+                    <p>see more</p>
+                </article>
+                <article>
+                    <img src="./assets/img/products/Intel Photos Sergei Starostin.jpg" alt="">
+                    <h4></h4>
+                    <p>see more</p>
+                </article>
+                <article>
+                    <img src="./assets/img/products/Mac Photos Nickoloui 2473183.jpg" alt="">
+                    <h4></h4>
+                    <p>see more</p>
+                </article>
+                <article>
+                    <img src="./assets/img/products/AMD Free Stock Photo.jpg" alt="">
+                    <h4></h4>
+                    <p>see more</p>
+                </article>
+                <article>
+                    <img src="./assets/img/products/Amd Photos Nanadua11.jpg" alt="">
+                    <h4></h4>
+                    <p>see more</p>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="align-center--y justify-center">
+        <p>This website is for educational purposes only - 2024</p>
+    </footer>
 </body>
 </html>

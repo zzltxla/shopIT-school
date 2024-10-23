@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* 9. Addendum perso */
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+:where(ul, ol):not([role="list"]) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+*> :last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Add font from woff2 file*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/VariableFont-Roboto-Medium.woff2");
+}
+
+@font-face {
+    font-family: "Staatliches";
+    src: url("../fonts/Staatliches\ Regular.woff2");
+    font-weight: 300;
+}
+
+:root {
+    --primary : #FFD913;
+    --red: #FF3D13;
+    --grey800: #111111;
+    --grey700: #1F1F1F;
+    --grey600: #252525;
+    --grey500: #494949;
+    --grey100: #929292;
+
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --container-width: min(1200px, 90vw);
+    --grid-gutter: 1.5rem;
+    --half-gutter: calc(var(--grid-gutter) / 2);
+}
+
+body {
+    font: 1.125rem/1.5rem "Staatliches", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+}
+
+h1 {
+    font-size: clamp(2.75rem, -1.0309rem + 8.642vw, 4.5rem);
+    line-height: clamp(2.75rem, 0.0494rem + 6.1728vw, 4rem);
+
+    margin-bottom: 3.25rem;
+    padding-bottom: .75rem;
+
+    text-transform: uppercase;
+    span {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 5%;
+            background-color: var(--white);
+            width: 5.5rem;
+            height: .35rem;
+            display: block;
+        }
+    }
+}
+
+h2 {
+    font-size: clamp(2rem, 1.4599rem + 1.2346vw, 2.25rem);
+    line-height: 2.375rem;
+
+    margin-bottom: 3.5rem;
+
+    position: relative;
+
+}
+
+
+h3 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.3125rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.title-footer {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+}
+.container {
+    width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-small {
+    width: 18.25rem;
+    height: 20rem;
+}
+
+.narrow {
+    max-width: 768px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: calc(var(--half-gutter) * -1);
+    margin-right: calc(var(--half-gutter) * -1);
+    margin-bottom: 4rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-right {
+    justify-content: flex-end;
+}
+
+.align-center--y {
+    align-items: center;
+}
+.align-bottom--y {
+    align-items: end;
+}
+
+.text-align--center {
+    text-align: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.text-large {
+    font-size: 1.375rem;
+    line-height: 2rem;
+}
+
+
+.column {
+    flex: 1 0 0;
+    padding: 0 var(--half-gutter);
+}
+
+.column--25 {
+    flex: none;
+    width: 25%;
+}
+
+.column--33 {
+    flex: none;
+    width: 33.33333%;
+}
+
+.column--40 {
+    flex: none;
+    width: 40%;
+}
+
+.column--50 {
+    flex: none;
+    width: 50%;
+}
+
+.column--60 {
+    flex: none;
+    width: 60%;
+}
+
+.column--auto {
+    flex: none;
+    width: auto;
+}
+
+
+header {
+    display: flex;
+
+    width: 100vw;
+
+    background-color: var(--grey800);
+
+    padding: 1rem 0;
+    .header-wrapper {
+        display: flex;
+    }
+}
+
+.logo {
+    font-size: 1.75rem;
+
+    display: flex;
+    flex-flow: row;
+    column-gap: .4rem;
+}
+
+.search-bar {
+    font-family: "Roboto";
+
+    height: 2rem;
+    width: 22rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    background-color: var(--grey700);
+
+    border-radius: 1.5rem;
+
+    display: flex;
+
+    transition: ease-in-out .2s;
+
+    &:hover {
+        background-color: var(--grey500);
+    }
+
+    .search-text {
+        font-size: .75rem;
+        color: var(--white);
+
+        outline: none;
+        border: none;
+
+        background-color: transparent;
+    }
+    .search-btn {
+        width: 24px;
+        height: 24px;
+
+        outline: none;
+        border: none;
+
+        background: url("../img/Search_shot.svg") center no-repeat;
+        background-size: cover;
+    }
+}
+
+ul {
+    display: flex;
+    flex-flow: row;
+    column-gap: 1rem;
+    list-style: none;
+    li {
+        width: 32px;
+        height: 32px;
+            &:first-child {
+                background: url("../img/Bag_shot.svg") center no-repeat;
+                background-size: cover;
+            }
+            &:last-child {
+                background: url("../img/Profile_shot.svg") center no-repeat;
+                background-size: cover;
+            }
+        
+    }
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.hero {
+    background: url('../img/products/Mac\ Photos\ Lenin\ Estrada.jpg') center no-repeat;
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+}
+
+.article-wrapper {
+    flex-wrap: nowrap;
+    column-gap: 1.25rem;
+
+    article {
+        width: 20%;
+        height: 35rem;
+
+        transition: ease-in-out .3s;
+
+        position: relative;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+        p {
+            font-size: 1.65rem;
+
+            position: absolute;
+            top: 50%;
+            left: 30%;
+
+            transition: ease-in-out .3s;
+
+
+            display: none;
+        }
+        &:hover {
+            width: 25%;
+            >img {
+                filter: brightness(60%);
+            }
+            >p {
+                display: block;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: var(--grey600);
+    display: flex;
+
+    margin-top: 3rem;
+
+    font-family: "Roboto";
+    font-size: .75rem;
+    height: 8vh;
+}

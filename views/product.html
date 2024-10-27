@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.lottielab.com/s/lottie-player@1.x/player-web.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>ShopIT</title>
+    <meta name="description" content="Buy your favorite things">
+</head>
+<body>
+    <header class="justify-center">
+        <div class="header-wrapper container align-center--y space-between">
+            <div class="logo align-center--y">
+                <figure class="sun">
+                    <lottie-player src="https://cdn.lottielab.com/l/CEoPDpBMz1WgTT.json" loop autoplay></lottie-player>                
+                </figure>
+                <h2>ShopIT</h2>
+            </div>
+            <div class="search-bar align-center--y space-between">
+                <input type="text" placeholder="Search.." class="search-text">
+                <input type="button" value="" class="search-btn">
+            </div>
+            <nav>
+                <ul class="align-center--y">
+                    <li><a href="./cart.html"><span id="cart-count"></span></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="product-wrapper space space-between">
+            <button id="back-button"></button>
+            <div class="product-info">
+                <!-- Injected from products js -->
+                <h1></h1>
+                <h3></h3>
+                <button id="cart">Add to cart</button>
+            </div>
+        </div>
+    </main>
+    <footer class="align-center--y justify-center">
+        <p>This website is for educational purposes only - 2024</p>
+    </footer>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="../assets/js/cart.js"></script>
+    <script type="text/javascript" src="../assets/js/products.js"></script>
+    <script type="text/javascript" src="../assets/js/confirmation.js"></script>
+</body>
+</html>

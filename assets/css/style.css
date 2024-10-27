@@ -88,6 +88,10 @@ h4 {
     margin-bottom: 0 !important;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* Add font from woff2 file*/
 
 @font-face {
@@ -175,6 +179,11 @@ h3 {
     font-weight: 600;
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 .title-footer {
     font-size: 1.125rem;
     line-height: 1.5rem;
@@ -208,9 +217,11 @@ h3 {
 .justify-center {
     justify-content: center;
 }
-
 .justify-right {
     justify-content: flex-end;
+}
+.justify-left {
+    justify-content: start;
 }
 
 .align-center--y {
@@ -218,6 +229,9 @@ h3 {
 }
 .align-bottom--y {
     align-items: end;
+}
+.align-top--y {
+    align-items: start;
 }
 
 .text-align--center {
@@ -227,6 +241,7 @@ h3 {
 .space-between {
     justify-content: space-between;
 }
+
 
 .text-large {
     font-size: 1.375rem;
@@ -277,6 +292,8 @@ header {
 
     background-color: var(--grey800);
 
+
+
     padding: 1rem 0;
     .header-wrapper {
         display: flex;
@@ -289,6 +306,10 @@ header {
     display: flex;
     flex-flow: row;
     column-gap: .4rem;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .search-bar {
@@ -307,13 +328,8 @@ header {
     display: flex;
 
     transition: ease-in-out .2s;
-
-    &:hover {
-        background-color: var(--grey500);
-    }
-
     .search-text {
-        font-size: .75rem;
+        font-size: .85rem;
         color: var(--white);
 
         outline: none;
@@ -322,14 +338,22 @@ header {
         background-color: transparent;
     }
     .search-btn {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
 
         outline: none;
         border: none;
 
         background: url("../img/Search_shot.svg") center no-repeat;
         background-size: cover;
+        &:hover {
+            background-color: var(--grey500);
+            cursor: pointer;
+        }
+    }
+    &:hover {
+        background-color: var(--grey500);
+        cursor: pointer;
     }
 }
 
@@ -341,9 +365,34 @@ ul {
     li {
         width: 32px;
         height: 32px;
+        &:hover {
+            cursor: pointer;
+        }
             &:first-child {
                 background: url("../img/Bag_shot.svg") center no-repeat;
                 background-size: cover;
+
+                position: relative;
+                vertical-align: middle;
+                span {
+                    width: 18px;
+                    height: 18px;
+
+                    background-color: var(--white);
+                    border-radius: 50%;
+
+                    position: absolute;
+                    z-index: 10;
+
+                    bottom: 0%;
+                    right: 0%;
+
+                    text-align: center;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
             &:last-child {
                 background: url("../img/Profile_shot.svg") center no-repeat;
@@ -352,9 +401,14 @@ ul {
         
     }
 }
-
+main {
+    margin: 1.75rem 0;
+}
 section {
     margin-bottom: 4rem;
+    >h2 {
+        text-decoration: underline;
+    }
 }
 
 .hero {
@@ -365,11 +419,13 @@ section {
 }
 
 .article-wrapper {
-    flex-wrap: nowrap;
-    column-gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    gap: 1.25rem;
 
     article {
-        width: 20%;
+        width: 12rem;
         height: 35rem;
 
         transition: ease-in-out .3s;
@@ -387,13 +443,13 @@ section {
             top: 50%;
             left: 30%;
 
-            transition: ease-in-out .3s;
+            transition: .3s .1s ease-in-out;
 
 
             display: none;
         }
         &:hover {
-            width: 25%;
+            width: 14rem;   
             >img {
                 filter: brightness(60%);
             }
@@ -408,9 +464,203 @@ footer {
     background-color: var(--grey600);
     display: flex;
 
-    margin-top: 3rem;
 
     font-family: "Roboto";
     font-size: .75rem;
     height: 8vh;
+}
+
+.product-wrapper {
+    height: 88vh;
+    width: 100vw;
+
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+
+    .product-info {
+        text-align: end;
+
+        margin-right: 4rem;
+        margin-top: 2rem;
+
+        display: flex;
+        flex-flow: column;
+        align-items: end;
+        gap: 1.75rem;
+
+        >button {
+            background-color: var(--grey600);
+
+            color: white;
+
+            border: 1px solid var(--grey100);
+            border-radius: .5rem;
+
+            padding: .75rem;
+
+            font-size: 2rem;
+
+            transition: ease-out .3s .1s;
+            &:hover {
+                background-color: var(--white);
+
+                color: var(--black);
+            }
+        }
+        h3 {
+            font-size: 3rem;
+        }
+    }
+    >button {
+        margin-left: 4rem;
+        height: 64px;
+        width: 64px;
+
+        margin-top: 2rem;
+
+        outline: none;
+        border: none;
+
+        background: url("../img/Arrow\ -\ Left\ Circle_shot.png") center center no-repeat;
+        background-size: cover;
+
+        transition: ease-in .2s .1s ;
+
+        &:hover {
+            scale: 1.2;
+        }
+    } 
+}
+
+.cart-main-wrapper {
+    display: flex;
+    flex-flow: row;
+
+    gap: 3rem;
+}
+
+
+
+
+
+#cart-article-wrapper {
+    width: 40rem;
+    min-height: 80vh;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+
+    >article {
+        height: 10rem;
+        width: 100%;
+
+        background-position: center center;
+        background-size: cover;
+
+        transition: ease-out .2s .1s;
+
+        display: flex;
+        justify-content: end;
+
+        p, h2 {
+            width: 100%;
+            text-align: end;
+        }
+        h2 {
+            margin: 0;
+        }
+        p {
+            font-size: 1.65rem;
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: block;
+            transition: .3s .1s ease-in-out;
+
+        }
+        &:hover {
+            width: 100%;   
+            cursor: pointer;
+
+        }
+    }
+}
+.price-recap {
+    width: 22rem;
+    >h2 {
+        margin-bottom: 1rem;
+        color: white;
+    }
+    >form {
+        display: flex;
+        flex-flow: column;
+        gap: 1.75rem;
+
+        width: 100%;
+        >p {
+            display: flex;
+            flex-flow: column;
+
+            width: 100%;
+            >small {
+                font-family: "Roboto", sans-serif;
+            }
+            >input {
+                background-color: var(--grey600);
+                border: 1px solid var(--white);
+                border-radius: .5rem;
+
+                padding: 1rem;
+                
+                
+                font-family: "Roboto", sans-serif;
+                color: var(--white);
+                font-size: .9rem;
+
+                &:focus {
+                    outline: none;
+                    border-inline: 2px solid var(--white);
+                }
+            }
+            #confirm-button {
+                width: 15rem;
+                padding: 1.175rem;
+            
+                border-radius: 1rem;
+            
+                outline: none;
+            
+                border: 1px solid var(--white);
+            
+                background-color: var(--black);
+            
+                color: var(--white);
+                font-family: "Staatliches", sans-serif;
+                font-size: 1.2rem;
+            
+                transition: ease-out .2s .1s;
+                &:hover{   
+                    filter: invert(100%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.success {
+    color: green;
+}
+.error {
+    color: var(--red);
+}
+
+#confirm-main {
+    display: flex;
 }

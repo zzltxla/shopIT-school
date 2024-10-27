@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.lottielab.com/s/lottie-player@1.x/player-web.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>ShopIT</title>
+    <meta name="description" content="Buy your favorite things">
+</head>
+<body>
+    <header class="justify-center">
+        <div class="header-wrapper container align-center--y space-between">
+            <div class="logo align-center--y">
+                <figure class="sun">
+                    <lottie-player src="https://cdn.lottielab.com/l/CEoPDpBMz1WgTT.json" loop autoplay></lottie-player>                
+                </figure>
+                <h2>ShopIT</h2>
+            </div>
+            <div class="search-bar align-center--y space-between">
+                <input type="text" placeholder="Search.." class="search-text">
+                <input type="button" value="" class="search-btn">
+            </div>
+            <nav>
+                <ul class="align-center--y">
+                    <li><a href="./cart.html"><span id="cart-count"></span></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container ">
+        <h1>Your cart summary</h1>
+        <div class="cart-main-wrapper">
+            <div class="article-wrapper" id="cart-article-wrapper">
+                <!-- Injected from cart js -->
+            </div>
+            <div class="price-recap">
+                <h2 id="price-total"></h2>
+                <form method="get" class="align-center--y">
+                    <p class="form-field">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" autocomplete="address" required>
+                        <small></small>
+                    </p>
+                    <p class="form-field">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" autocomplete="email" required>
+                        <small></small>
+                    </p>
+                    <p class="form-field">
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="password" autocomplete="current-password" required>
+                        <small></small>
+                    </p>
+                    <p class="form-field">
+                        <label for="confirm-password">Password</label>
+                        <input type="text" name="confirm-password" id="confirm-password" autocomplete="current-password" required>
+                        <small></small>
+                    </p>
+                    <p class="form-field">
+                        <input type="submit" value="Confirm Cart" id="confirm-button">
+                    </p>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="align-center--y  justify-center">
+        <p>This website is for educational purposes only - 2024</p>
+    </footer>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="../assets/js/cart.js"></script>
+    <script type="text/javascript" src="../assets/js/products.js"></script>
+    <script type="text/javascript" src="../assets/js/confirmation.js"></script>
+</body>
+</html>

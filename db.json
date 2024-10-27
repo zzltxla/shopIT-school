@@ -1,0 +1,236 @@
+{
+    "products": [
+        {
+            "id": "62179deff56bfe4217bf3041",
+            "name": "Z Clip 2023",
+            "description": "laptop, OLED 6.7\", 12Mpx f:1.9",
+            "imageUrl": "../assets/img/products/Intel Photos Nicolas Foster.jpg",
+            "price": 1269,
+            "__v": 0,
+            "categories": [
+                "smartphone",
+                "apple"
+            ]
+        },
+        {
+            "id": "62179ca47da8e868f962cf46",
+            "name": "MatChrome D17 (1To)",
+            "description": "Intel® Core™ i7, 16 Go RAM, 1To SSD",
+            "imageUrl": "../assets/img/products/AMD Free Stock Photo.jpg",
+            "price": 899,
+            "__v": 0,
+            "categories": [
+                "computer",
+                "microhd"
+            ]
+        },
+        {
+            "id": "64ecbb0a39ffaf1c3464a026",
+            "name": "Z Clip 2023 Max",
+            "description": "Smartphone, OLED 6.7\", Ultra grand-angle f:2.4",
+            "imageUrl": "../assets/img/products/Mac Photos Nickoloui 2473183.jpg",
+            "price": 1259,
+            "categories": [
+                "smartphone",
+                "apple"
+            ],
+            "__v": 0
+        },
+        {
+            "id": "64ecbc4a39ffaf1c3464a05c",
+            "name": "EarBugs QC II",
+            "description": "Rechargeable, Bluetooth, 5h d'autonomie",
+            "imageUrl": "../assets/img/products/Intel Photos Sergei Starostin.jpg",
+            "price": 189,
+            "categories": [
+                "accessory",
+                "apple"
+            ],
+            "__v": 0
+        },
+        {
+            "id": "6233514452e73ab08c5122e9",
+            "name": "EarBugs QC III",
+            "description": "Dolby Surrond 360°, Bassboost, Noise reducer, jusqu'à 18h d'autonomie",
+            "imageUrl": "../assets/img/products/Intel Photos, Pexels Marques 42038281.jpg",
+            "price": 259,
+            "categories": [
+                "accessory",
+                "apple"
+            ],
+            "__v": 0
+        },
+        {
+            "id": "64ecbbb239ffaf1c3464a04d",
+            "name": "MatChrome D17",
+            "description": "Intel® Core™ i7, 16 Go RAM, 512 Go SSD",
+            "imageUrl": "../assets/img/products/Nvidia stock photo.jpg",
+            "price": 729,
+            "categories": [
+                "computer",
+                "microhd"
+            ],
+            "__v": 0
+        },
+        {
+            "id": "662e83e24458671791c17718",
+            "name": "testCategoryUpdate",
+            "description": "test",
+            "imageUrl": "../assets/img/products/Amd Photos Nanadua11.jpg",
+            "price": 700.99,
+            "categories": [
+                "computer"
+            ],
+            "__v": 0
+        },
+        {
+            "id": "662e85ff4458671791c17727",
+            "name": "CategoryUpdate",
+            "description": "test",
+            "imageUrl": "../assets/img/products/Thinkpad Photos Olenka Bohovyk.jpg",
+            "price": 700.99,
+            "categories": [],
+            "__v": 0
+        },
+        {
+            "id": "662e87f44458671791c1773f",
+            "name": "CategoryUpdate",
+            "description": "test",
+            "imageUrl": "../assets/img/products/Athena 2582937.jpg",
+            "price": 700.99,
+            "categories": [
+                "apple"
+            ],
+            "__v": 0
+        },
+        {
+            "id": "66675549e1893d1d68b3beea",
+            "name": "redux",
+            "description": "redux",
+            "imageUrl": "../assets/img/products/Computer Photos by Myles Kuo.jpg",
+            "price": 0,
+            "categories": [],
+            "__v": 0
+        }
+    ],
+    "users": [
+        {
+            "id": "64a68bfc0a9215e46628243a",
+            "userId": "64a68bfc0a9215e466282439",
+            "email": "xxxx.xxx@xxx.xxx",
+            "password": "xxx",
+            "firstname": "test",
+            "lastname": "test",
+            "isAdmin": false,
+            "__v": 0
+        },
+        {
+            "id": "622a094a0fd5c89ad7ecb906",
+            "userId": "622a094a0fd5c89ad7ecb905",
+            "email": "xxxx.xxx@xxx.xxx",
+            "password": "xxx",
+            "firstname": "Timothee",
+            "lastname": "Thiry",
+            "isAdmin": false,
+            "__v": 0
+        },
+        {
+            "id": "64a68debac143a04c318de9f",
+            "userId": "64a68debac143a04c318de9e",
+            "email": "xxxx.xxx@xxx.xxx",
+            "password": "xxx",
+            "firstname": "test",
+            "lastname": "test",
+            "isAdmin": false,
+            "__v": 0
+        },
+        {
+            "id": "633ef1e7db7b679b2a0cfc4f",
+            "userId": "633ef1e7db7b679b2a0cfc4e",
+            "email": "xxxx.xxx@xxx.xxx",
+            "password": "xxx",
+            "firstname": "azerty",
+            "lastname": "azerty",
+            "isAdmin": false,
+            "__v": 0
+        },
+        {
+            "id": "62879805226f6a9ca5aefa0d",
+            "userId": "62879805226f6a9ca5aefa0c",
+            "email": "xxxx.xxx@xxx.xxx",
+            "password": "xxx",
+            "firstname": "Joey",
+            "lastname": "Tribbiani",
+            "isAdmin": false,
+            "__v": 0
+        },
+        {
+            "id": "634ff8b6bcbaed3eb08020c2",
+            "userId": "634ff8b6bcbaed3eb08020c1",
+            "email": "xxxx.xxx@xxx.xxx",
+            "password": "xxx",
+            "firstname": "test",
+            "lastname": "test",
+            "isAdmin": false,
+            "__v": 0
+        },
+        {
+            "id": "655a49ce5e293d75cc840051",
+            "userId": "655a49ce5e293d75cc840050",
+            "email": "xxxx.xxx@xxx.xxx",
+            "password": "xxx",
+            "firstname": "toto",
+            "lastname": "toto",
+            "isAdmin": false,
+            "__v": 0
+        }
+    ],
+    "categories": [
+        {
+            "productIds": [],
+            "id": "64ecbee50e31139dc06dab35",
+            "name": "accessory",
+            "__v": 0
+        },
+        {
+            "id": "64ecbfec0e31139dc06dab37",
+            "name": "laptop",
+            "productIds": []
+        },
+        {
+            "productIds": [],
+            "id": "64ecbe220e31139dc06dab34",
+            "name": "microhd",
+            "__v": 0
+        },
+        {
+            "productIds": [],
+            "id": "64ecbfba0e31139dc06dab36",
+            "name": "nose",
+            "__v": 0
+        },
+        {
+            "id": "6218f042fdc1a2edeccdce34",
+            "name": "apple",
+            "__v": 0,
+            "productIds": [
+                "662e87f44458671791c1773f"
+            ]
+        },
+        {
+            "productIds": [],
+            "id": "6218e906bdc3eaa6aab71899",
+            "name": "smartphone",
+            "__v": 0
+        },
+        {
+            "id": "6218ea97bdc3eaa6aab718a6",
+            "name": "computer",
+            "__v": 0,
+            "productIds": [
+                "662e83e24458671791c17718"
+            ]
+        }
+    ]
+
+}
